@@ -1,0 +1,524 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F5CCF0091BED87EF003581B5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F5CCF0081BED87EF003581B5 /* main.m */; };
+		F5CCF00C1BED87EF003581B5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F5CCF00B1BED87EF003581B5 /* AppDelegate.m */; };
+		F5CCF00F1BED87EF003581B5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5CCF00E1BED87EF003581B5 /* ViewController.m */; };
+		F5CCF0121BED87EF003581B5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5CCF0101BED87EF003581B5 /* Main.storyboard */; };
+		F5CCF0141BED87EF003581B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5CCF0131BED87EF003581B5 /* Assets.xcassets */; };
+		F5CCF0171BED87EF003581B5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5CCF0151BED87EF003581B5 /* LaunchScreen.storyboard */; };
+		F5CCF0221BED87EF003581B5 /* radio_guiTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F5CCF0211BED87EF003581B5 /* radio_guiTests.m */; };
+		F5CCF02D1BED87EF003581B5 /* radio_guiUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F5CCF02C1BED87EF003581B5 /* radio_guiUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F5CCF01E1BED87EF003581B5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F5CCEFFC1BED87EE003581B5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F5CCF0031BED87EE003581B5;
+			remoteInfo = "radio-gui";
+		};
+		F5CCF0291BED87EF003581B5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F5CCEFFC1BED87EE003581B5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F5CCF0031BED87EE003581B5;
+			remoteInfo = "radio-gui";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F5CCF0041BED87EF003581B5 /* radio-gui.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "radio-gui.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5CCF0081BED87EF003581B5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F5CCF00A1BED87EF003581B5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F5CCF00B1BED87EF003581B5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F5CCF00D1BED87EF003581B5 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		F5CCF00E1BED87EF003581B5 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		F5CCF0111BED87EF003581B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F5CCF0131BED87EF003581B5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F5CCF0161BED87EF003581B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F5CCF0181BED87EF003581B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F5CCF01D1BED87EF003581B5 /* radio-guiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "radio-guiTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5CCF0211BED87EF003581B5 /* radio_guiTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = radio_guiTests.m; sourceTree = "<group>"; };
+		F5CCF0231BED87EF003581B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F5CCF0281BED87EF003581B5 /* radio-guiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "radio-guiUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5CCF02C1BED87EF003581B5 /* radio_guiUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = radio_guiUITests.m; sourceTree = "<group>"; };
+		F5CCF02E1BED87EF003581B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F5CCF0011BED87EE003581B5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5CCF01A1BED87EF003581B5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5CCF0251BED87EF003581B5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F5CCEFFB1BED87EE003581B5 = {
+			isa = PBXGroup;
+			children = (
+				F5CCF0061BED87EF003581B5 /* radio-gui */,
+				F5CCF0201BED87EF003581B5 /* radio-guiTests */,
+				F5CCF02B1BED87EF003581B5 /* radio-guiUITests */,
+				F5CCF0051BED87EF003581B5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F5CCF0051BED87EF003581B5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F5CCF0041BED87EF003581B5 /* radio-gui.app */,
+				F5CCF01D1BED87EF003581B5 /* radio-guiTests.xctest */,
+				F5CCF0281BED87EF003581B5 /* radio-guiUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F5CCF0061BED87EF003581B5 /* radio-gui */ = {
+			isa = PBXGroup;
+			children = (
+				F5CCF00A1BED87EF003581B5 /* AppDelegate.h */,
+				F5CCF00B1BED87EF003581B5 /* AppDelegate.m */,
+				F5CCF00D1BED87EF003581B5 /* ViewController.h */,
+				F5CCF00E1BED87EF003581B5 /* ViewController.m */,
+				F5CCF0101BED87EF003581B5 /* Main.storyboard */,
+				F5CCF0131BED87EF003581B5 /* Assets.xcassets */,
+				F5CCF0151BED87EF003581B5 /* LaunchScreen.storyboard */,
+				F5CCF0181BED87EF003581B5 /* Info.plist */,
+				F5CCF0071BED87EF003581B5 /* Supporting Files */,
+			);
+			path = "radio-gui";
+			sourceTree = "<group>";
+		};
+		F5CCF0071BED87EF003581B5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F5CCF0081BED87EF003581B5 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F5CCF0201BED87EF003581B5 /* radio-guiTests */ = {
+			isa = PBXGroup;
+			children = (
+				F5CCF0211BED87EF003581B5 /* radio_guiTests.m */,
+				F5CCF0231BED87EF003581B5 /* Info.plist */,
+			);
+			path = "radio-guiTests";
+			sourceTree = "<group>";
+		};
+		F5CCF02B1BED87EF003581B5 /* radio-guiUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F5CCF02C1BED87EF003581B5 /* radio_guiUITests.m */,
+				F5CCF02E1BED87EF003581B5 /* Info.plist */,
+			);
+			path = "radio-guiUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F5CCF0031BED87EE003581B5 /* radio-gui */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F5CCF0311BED87EF003581B5 /* Build configuration list for PBXNativeTarget "radio-gui" */;
+			buildPhases = (
+				F5CCF0001BED87EE003581B5 /* Sources */,
+				F5CCF0011BED87EE003581B5 /* Frameworks */,
+				F5CCF0021BED87EE003581B5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "radio-gui";
+			productName = "radio-gui";
+			productReference = F5CCF0041BED87EF003581B5 /* radio-gui.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F5CCF01C1BED87EF003581B5 /* radio-guiTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F5CCF0341BED87EF003581B5 /* Build configuration list for PBXNativeTarget "radio-guiTests" */;
+			buildPhases = (
+				F5CCF0191BED87EF003581B5 /* Sources */,
+				F5CCF01A1BED87EF003581B5 /* Frameworks */,
+				F5CCF01B1BED87EF003581B5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F5CCF01F1BED87EF003581B5 /* PBXTargetDependency */,
+			);
+			name = "radio-guiTests";
+			productName = "radio-guiTests";
+			productReference = F5CCF01D1BED87EF003581B5 /* radio-guiTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F5CCF0271BED87EF003581B5 /* radio-guiUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F5CCF0371BED87EF003581B5 /* Build configuration list for PBXNativeTarget "radio-guiUITests" */;
+			buildPhases = (
+				F5CCF0241BED87EF003581B5 /* Sources */,
+				F5CCF0251BED87EF003581B5 /* Frameworks */,
+				F5CCF0261BED87EF003581B5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F5CCF02A1BED87EF003581B5 /* PBXTargetDependency */,
+			);
+			name = "radio-guiUITests";
+			productName = "radio-guiUITests";
+			productReference = F5CCF0281BED87EF003581B5 /* radio-guiUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F5CCEFFC1BED87EE003581B5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = private;
+				TargetAttributes = {
+					F5CCF0031BED87EE003581B5 = {
+						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = UP8389U8H4;
+					};
+					F5CCF01C1BED87EF003581B5 = {
+						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = UP8389U8H4;
+						TestTargetID = F5CCF0031BED87EE003581B5;
+					};
+					F5CCF0271BED87EF003581B5 = {
+						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = UP8389U8H4;
+						TestTargetID = F5CCF0031BED87EE003581B5;
+					};
+				};
+			};
+			buildConfigurationList = F5CCEFFF1BED87EE003581B5 /* Build configuration list for PBXProject "radio-gui" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F5CCEFFB1BED87EE003581B5;
+			productRefGroup = F5CCF0051BED87EF003581B5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F5CCF0031BED87EE003581B5 /* radio-gui */,
+				F5CCF01C1BED87EF003581B5 /* radio-guiTests */,
+				F5CCF0271BED87EF003581B5 /* radio-guiUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F5CCF0021BED87EE003581B5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5CCF0171BED87EF003581B5 /* LaunchScreen.storyboard in Resources */,
+				F5CCF0141BED87EF003581B5 /* Assets.xcassets in Resources */,
+				F5CCF0121BED87EF003581B5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5CCF01B1BED87EF003581B5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5CCF0261BED87EF003581B5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F5CCF0001BED87EE003581B5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5CCF00F1BED87EF003581B5 /* ViewController.m in Sources */,
+				F5CCF00C1BED87EF003581B5 /* AppDelegate.m in Sources */,
+				F5CCF0091BED87EF003581B5 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5CCF0191BED87EF003581B5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5CCF0221BED87EF003581B5 /* radio_guiTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5CCF0241BED87EF003581B5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5CCF02D1BED87EF003581B5 /* radio_guiUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F5CCF01F1BED87EF003581B5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F5CCF0031BED87EE003581B5 /* radio-gui */;
+			targetProxy = F5CCF01E1BED87EF003581B5 /* PBXContainerItemProxy */;
+		};
+		F5CCF02A1BED87EF003581B5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F5CCF0031BED87EE003581B5 /* radio-gui */;
+			targetProxy = F5CCF0291BED87EF003581B5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F5CCF0101BED87EF003581B5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F5CCF0111BED87EF003581B5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F5CCF0151BED87EF003581B5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F5CCF0161BED87EF003581B5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F5CCF02F1BED87EF003581B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F5CCF0301BED87EF003581B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F5CCF0321BED87EF003581B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				INFOPLIST_FILE = "radio-gui/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "darrendu.radio-gui";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F5CCF0331BED87EF003581B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				INFOPLIST_FILE = "radio-gui/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "darrendu.radio-gui";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		F5CCF0351BED87EF003581B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "radio-guiTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "darrendu.radio-guiTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/radio-gui.app/radio-gui";
+			};
+			name = Debug;
+		};
+		F5CCF0361BED87EF003581B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "radio-guiTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "darrendu.radio-guiTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/radio-gui.app/radio-gui";
+			};
+			name = Release;
+		};
+		F5CCF0381BED87EF003581B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "radio-guiUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "darrendu.radio-guiUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "radio-gui";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		F5CCF0391BED87EF003581B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "radio-guiUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "darrendu.radio-guiUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "radio-gui";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F5CCEFFF1BED87EE003581B5 /* Build configuration list for PBXProject "radio-gui" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5CCF02F1BED87EF003581B5 /* Debug */,
+				F5CCF0301BED87EF003581B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F5CCF0311BED87EF003581B5 /* Build configuration list for PBXNativeTarget "radio-gui" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5CCF0321BED87EF003581B5 /* Debug */,
+				F5CCF0331BED87EF003581B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F5CCF0341BED87EF003581B5 /* Build configuration list for PBXNativeTarget "radio-guiTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5CCF0351BED87EF003581B5 /* Debug */,
+				F5CCF0361BED87EF003581B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F5CCF0371BED87EF003581B5 /* Build configuration list for PBXNativeTarget "radio-guiUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5CCF0381BED87EF003581B5 /* Debug */,
+				F5CCF0391BED87EF003581B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F5CCEFFC1BED87EE003581B5 /* Project object */;
+}

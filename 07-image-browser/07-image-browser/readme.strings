@@ -1,0 +1,10 @@
+/* 
+  readme.strings
+  07-image-browser
+
+  Created by 杜东方 on 15/10/31.
+  Copyright © 2015年 private. All rights reserved.
+*/
+
+
+1.控制标签换行，将lines设置为0，同时增加标签的宽度和高度，内容就会充满整个标签
