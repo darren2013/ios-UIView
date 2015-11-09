@@ -106,7 +106,7 @@
     }
 }
 
-
+#pragma mark - 代理方法
 
 - (void)appInfoViewDidClickedDownload:(DDAppInfoView *)appInfoView{
     [DDLabel showLabel:self.view withAppInfoName:appInfoView.appInfo.name];
