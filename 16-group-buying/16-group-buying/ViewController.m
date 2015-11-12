@@ -6,12 +6,25 @@
 //  Copyright © 2015年 private. All rights reserved.
 //
 
+/**
+ *  一般footerView和headView高度约定为44;
+ 设定xib custom class之后才可以连线
+ *
+ *  @param nonatomic <#nonatomic description#>
+ *  @param strong    <#strong description#>
+ *
+ *  @return <#return value description#>
+ */
+
 #import "ViewController.h"
 #import "DDGroupBuying.h"
+#import "DDGroupBuyingCell.h"
+#import "DDFooterView.h"
 
 @interface ViewController ()<UITableViewDataSource>
 
 @property(nonatomic,strong)NSArray *groupBuyings;
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
 
 @end
 
@@ -30,6 +43,11 @@
     // Do any additional setup after loading the view, typically from a nib.
     
     //NSLog(@"groupBuyings:%@",self.groupBuyings);
+    NSLog(@"%@",[NSBundle mainBundle]);
+    
+    self.tableView.rowHeight = 80;
+    
+    self.tableView.tableFooterView = [DDFooterView footerView];
 }
 
 -(BOOL)prefersStatusBarHidden{
@@ -47,37 +65,22 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    static NSString *reuseId = @"group-buying";
     
-    UITableViewCell *tableViewCell = [tableView dequeueReusableCellWithIdentifier:reuseId];
-    
-    if (tableViewCell == nil) {
-//        tableViewCell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:reuseId];
-        
-        
-        /**
-         *  从xib中加载view,为了使用缓存，记得一定要把xib文件中得TableViewCell控件的identifier设置为:group-buying
-         */
-        tableViewCell = [[[NSBundle mainBundle] loadNibNamed:@"DDGroupBuying" owner:nil options:nil] lastObject];
-        
-        //加载xib另外一种方式
-//        UINib *nib = [UINib nibWithNibName:@"DDGroupBuying" bundle:nil];
-//        tableViewCell = [[nib instantiateWithOwner:nil options:nil] lastObject];
-        
-        
-    }
+    DDGroupBuyingCell *groupBuyingCell = [DDGroupBuyingCell groupBuyingCellWithTableView:tableView];
     
     DDGroupBuying *groupBuying = self.groupBuyings[indexPath.row];
+    
+    groupBuyingCell.groupBuying = groupBuying;
     
 //    tableViewCell.textLabel.text = groupBuying.title;
 //    tableViewCell.imageView.image = [UIImage imageNamed:groupBuying.icon];
 //    tableViewCell.detailTextLabel.text = groupBuying.price;
     
     //可以设置tag方式，给自定义的view赋值，比较麻烦；另外导致controller需要了解xib细节，耦合太厉害
-    UILabel *titleLabel = [tableViewCell viewWithTag:11];
-    titleLabel.text = groupBuying.title;
+//    UILabel *titleLabel = [tableViewCell viewWithTag:11];
+//    titleLabel.text = groupBuying.title;
     
-    return tableViewCell;
+    return groupBuyingCell;
 }
 
 @end

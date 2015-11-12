@@ -11,7 +11,13 @@
  */
 
 #import <UIKit/UIKit.h>
+@class DDGroupBuying;
 
 @interface DDGroupBuyingCell : UITableViewCell
+
+@property(nonatomic,strong)DDGroupBuying *groupBuying;
+
++(instancetype) groupBuyingCellWithTableView:(UITableView*)tableView;
+
 
 @end

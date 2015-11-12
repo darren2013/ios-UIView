@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F5031FCD1BF4EE1C00E695BB /* DDFooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F5031FCC1BF4EE1C00E695BB /* DDFooterView.xib */; };
+		F5031FD01BF4F1A500E695BB /* DDFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = F5031FCF1BF4F1A500E695BB /* DDFooterView.m */; };
 		F58B1F861BF0E20F00D1E4EA /* DDGroupBuying.xib in Resources */ = {isa = PBXBuildFile; fileRef = F58B1F851BF0E20F00D1E4EA /* DDGroupBuying.xib */; };
 		F58B1F8C1BF0E95700D1E4EA /* DDGroupBuyingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F58B1F8B1BF0E95700D1E4EA /* DDGroupBuyingCell.m */; };
 		F5EBB43C1BF0D70B00D44DDD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F5EBB43B1BF0D70B00D44DDD /* main.m */; };
@@ -39,6 +41,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F5031FCC1BF4EE1C00E695BB /* DDFooterView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DDFooterView.xib; sourceTree = "<group>"; };
+		F5031FCE1BF4F1A500E695BB /* DDFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDFooterView.h; sourceTree = "<group>"; };
+		F5031FCF1BF4F1A500E695BB /* DDFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDFooterView.m; sourceTree = "<group>"; };
 		F58B1F851BF0E20F00D1E4EA /* DDGroupBuying.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DDGroupBuying.xib; sourceTree = "<group>"; };
 		F58B1F8A1BF0E95700D1E4EA /* DDGroupBuyingCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDGroupBuyingCell.h; sourceTree = "<group>"; };
 		F58B1F8B1BF0E95700D1E4EA /* DDGroupBuyingCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDGroupBuyingCell.m; sourceTree = "<group>"; };
@@ -88,6 +93,59 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F5031FC71BF4EA6E00E695BB /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				F5031FCB1BF4EAAD00E695BB /* Other */,
+				F5031FCA1BF4EAA300E695BB /* Controller */,
+				F5031FC91BF4EA9C00E695BB /* View */,
+				F5031FC81BF4EA7700E695BB /* Model */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		F5031FC81BF4EA7700E695BB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F5EBB46F1BF0D98700D44DDD /* DDGroupBuying.h */,
+				F5EBB4701BF0D98700D44DDD /* DDGroupBuying.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		F5031FC91BF4EA9C00E695BB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F58B1F851BF0E20F00D1E4EA /* DDGroupBuying.xib */,
+				F5EBB4481BF0D70B00D44DDD /* LaunchScreen.storyboard */,
+				F5EBB4431BF0D70B00D44DDD /* Main.storyboard */,
+				F58B1F8A1BF0E95700D1E4EA /* DDGroupBuyingCell.h */,
+				F58B1F8B1BF0E95700D1E4EA /* DDGroupBuyingCell.m */,
+				F5031FCC1BF4EE1C00E695BB /* DDFooterView.xib */,
+				F5031FCE1BF4F1A500E695BB /* DDFooterView.h */,
+				F5031FCF1BF4F1A500E695BB /* DDFooterView.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		F5031FCA1BF4EAA300E695BB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F5EBB4401BF0D70B00D44DDD /* ViewController.h */,
+				F5EBB4411BF0D70B00D44DDD /* ViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		F5031FCB1BF4EAAD00E695BB /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				F5EBB43D1BF0D70B00D44DDD /* AppDelegate.h */,
+				F5EBB43E1BF0D70B00D44DDD /* AppDelegate.m */,
+			);
+			name = Other;
+			sourceTree = "<group>";
+		};
 		F5EBB42E1BF0D70B00D44DDD = {
 			isa = PBXGroup;
 			children = (
@@ -111,19 +169,7 @@
 		F5EBB4391BF0D70B00D44DDD /* 16-group-buying */ = {
 			isa = PBXGroup;
 			children = (
-				F58B1F8A1BF0E95700D1E4EA /* DDGroupBuyingCell.h */,
-				F58B1F8B1BF0E95700D1E4EA /* DDGroupBuyingCell.m */,
-				F5EBB46F1BF0D98700D44DDD /* DDGroupBuying.h */,
-				F5EBB4701BF0D98700D44DDD /* DDGroupBuying.m */,
-				F5EBB43D1BF0D70B00D44DDD /* AppDelegate.h */,
-				F5EBB43E1BF0D70B00D44DDD /* AppDelegate.m */,
-				F5EBB4401BF0D70B00D44DDD /* ViewController.h */,
-				F5EBB4411BF0D70B00D44DDD /* ViewController.m */,
-				F5EBB4431BF0D70B00D44DDD /* Main.storyboard */,
-				F5EBB4461BF0D70B00D44DDD /* Assets.xcassets */,
-				F5EBB4481BF0D70B00D44DDD /* LaunchScreen.storyboard */,
-				F5EBB44B1BF0D70B00D44DDD /* Info.plist */,
-				F58B1F851BF0E20F00D1E4EA /* DDGroupBuying.xib */,
+				F5031FC71BF4EA6E00E695BB /* Classes */,
 				F5EBB43A1BF0D70B00D44DDD /* Supporting Files */,
 			);
 			path = "16-group-buying";
@@ -132,6 +178,8 @@
 		F5EBB43A1BF0D70B00D44DDD /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				F5EBB44B1BF0D70B00D44DDD /* Info.plist */,
+				F5EBB4461BF0D70B00D44DDD /* Assets.xcassets */,
 				F5EBB46D1BF0D8D500D44DDD /* tgs.plist */,
 				F5EBB43B1BF0D70B00D44DDD /* main.m */,
 			);
@@ -263,6 +311,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F5EBB44A1BF0D70B00D44DDD /* LaunchScreen.storyboard in Resources */,
+				F5031FCD1BF4EE1C00E695BB /* DDFooterView.xib in Resources */,
 				F5EBB46E1BF0D8D500D44DDD /* tgs.plist in Resources */,
 				F5EBB4471BF0D70B00D44DDD /* Assets.xcassets in Resources */,
 				F58B1F861BF0E20F00D1E4EA /* DDGroupBuying.xib in Resources */,
@@ -292,6 +341,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F5EBB4421BF0D70B00D44DDD /* ViewController.m in Sources */,
+				F5031FD01BF4F1A500E695BB /* DDFooterView.m in Sources */,
 				F58B1F8C1BF0E95700D1E4EA /* DDGroupBuyingCell.m in Sources */,
 				F5EBB4711BF0D98700D44DDD /* DDGroupBuying.m in Sources */,
 				F5EBB43F1BF0D70B00D44DDD /* AppDelegate.m in Sources */,

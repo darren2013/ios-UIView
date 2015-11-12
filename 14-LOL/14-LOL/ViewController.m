@@ -34,7 +34,7 @@
     
    // NSLog(@"%ld",self.heros.count);
     
-    //1.UITableView dataSource可以通过连线方式实现
+    //1.UITableView dataSource可以通过连线方式实现，指定dataSource到ViewController
     
     //设置tableView行高
     //self.tableView.rowHeight = 200;

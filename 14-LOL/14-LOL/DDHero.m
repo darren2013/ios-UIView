@@ -21,7 +21,7 @@
 
 + (instancetype)hero:(NSDictionary *)dic
 {
-    return [[DDHero alloc] initWithDic:dic];
+    return [[self alloc] initWithDic:dic];
 }
 
 + (NSArray *)heroList{
