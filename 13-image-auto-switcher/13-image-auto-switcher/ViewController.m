@@ -34,7 +34,7 @@
         [imageView setImage:[UIImage imageNamed:imageName]];
         
         //image frame
-        imageView.frame = CGRectMake(0 + i*scrollViewSize.width, 0, scrollViewSize.width, scrollViewSize.height);
+        imageView.frame = CGRectMake(i*scrollViewSize.width, 0, scrollViewSize.width, scrollViewSize.height);
         
     }
     

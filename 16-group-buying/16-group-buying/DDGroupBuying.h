@@ -20,6 +20,6 @@
 
 +(instancetype)groupBuying:(NSDictionary *)dic;
 
-+(NSArray *) groupBuyingList;
++(NSMutableArray *) groupBuyingList;
 
 @end

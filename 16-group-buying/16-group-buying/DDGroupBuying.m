@@ -22,7 +22,7 @@
     return [[DDGroupBuying alloc] initWithDic:dic];
 }
 
-+ (NSArray *)groupBuyingList{
++ (NSMutableArray *)groupBuyingList{
     NSMutableArray *result = [NSMutableArray array];
     NSBundle *bundle = [NSBundle mainBundle];
     NSString *path = [bundle pathForResource:@"tgs" ofType:@"plist"];
