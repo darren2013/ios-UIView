@@ -6,11 +6,12 @@
 //  Copyright © 2015年 private. All rights reserved.
 //
 
-
+//定义宏
 #import "DDMicroBlogCell.h"
-#import "DDMicroBlogFrame.h"
+#import "DDMicroBlog.h"
 
-
+#define NAME_FONT_SIZE 15
+#define TEXT_FONT_SIZE 14
 
 @interface DDMicroBlogCell ()
 
@@ -97,32 +98,68 @@
 
 //设置子控件显示内容
 -(void) setSubViewContent{
-    DDMicroBlog *micronBlog = self.microBlogFrame.microBlog;
-    self.iconImageView.image = [UIImage imageNamed:micronBlog.icon];
-    self.nameLabelView.text = micronBlog.name;
+    self.iconImageView.image = [UIImage imageNamed:self.microBlog.icon];
+    self.nameLabelView.text = self.microBlog.name;
     self.vipImageView.image = [UIImage imageNamed:@"vip"];
     
-    if (!micronBlog.isVip) {
+    if (!self.microBlog.isVip) {
         self.vipImageView.hidden = YES;
         self.nameLabelView.textColor = [UIColor blackColor];
     }else{
         self.nameLabelView.textColor = [UIColor redColor];
         self.vipImageView.hidden = NO;
     }
-    self.contentLabelView.text = micronBlog.text;
-    //如果图片不存在设置，后台会打印警告
-    if(micronBlog.picture)self.pictureImageView.image = [UIImage imageNamed:micronBlog.picture];
+    self.contentLabelView.text = self.microBlog.text;
+    self.pictureImageView.image = [UIImage imageNamed:self.microBlog.picture];
 }
 
 //设置子控件的frame
 
 -(void) setSubViewFrame{
+    CGFloat iconW = 30;
+    CGFloat iconH = 30;
+    CGFloat margin = 10;
+    CGFloat iconX = margin;
+    CGFloat iconY = margin;
+    //头像位置
+    self.iconImageView.frame = CGRectMake(iconX, iconY, iconW, iconH);
     
-    self.iconImageView.frame=self.microBlogFrame.iconImageViewFrame;
-    self.nameLabelView.frame=self.microBlogFrame.nameLabelViewFrame;
-    self.vipImageView.frame=self.microBlogFrame.vipImageViewFrame;
-    self.contentLabelView.frame=self.microBlogFrame.contentLabelViewFrame;
-    self.pictureImageView.frame=self.microBlogFrame.pictureImageViewFrame;
+    //昵称
+    CGSize maxSize = CGSizeMake(MAXFLOAT, MAXFLOAT);
+    
+    //计算文本大小
+//    CGSize nameSize = [self.microBlog.name boundingRectWithSize:maxSize options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:NAME_FONT_SIZE]} context:nil].size;
+    
+    CGSize nameSize = [self sizeText:self.microBlog.name maxSize:maxSize fontSize:NAME_FONT_SIZE];
+    
+    CGFloat nameX = CGRectGetMaxX(self.iconImageView.frame) + margin;
+    CGFloat nameY = iconY + (iconH - nameSize.height)/2;
+    self.nameLabelView.frame = CGRectMake(nameX, nameY, nameSize.width, nameSize.height);
+    
+    //VIP
+    CGFloat vipX = CGRectGetMaxX(self.nameLabelView.frame) + margin;
+    CGFloat vipY = nameY;
+    CGFloat vipW = 14;
+    CGFloat vipH = 14;
+    self.vipImageView.frame = (CGRect){{vipX,vipY},{vipW,vipH}};
+    
+    //微博内容
+    CGFloat textX = iconX;
+    CGFloat textY = CGRectGetMaxY(self.iconImageView.frame) + margin;
+    CGSize textMaxSize = CGSizeMake(355, MAXFLOAT);
+    CGSize textSize = [self sizeText:self.microBlog.text maxSize:textMaxSize fontSize:TEXT_FONT_SIZE];
+    
+    self.contentLabelView.frame = CGRectMake(textX, textY, textSize.width, textSize.height);
+    
+    //图片
+    CGFloat pictureX = iconX;
+    CGFloat pictureY = CGRectGetMaxY(self.contentLabelView.frame) + margin;
+    CGFloat pictureW = 100;
+    CGFloat pictureH = 100;
+    
+    self.pictureImageView.frame = CGRectMake(pictureX, pictureY, pictureW, pictureH);
+    
+    
 }
 
 -(CGSize)sizeText:(NSString*)text maxSize:(CGSize)maxSize fontSize:(CGFloat)fontSize{
@@ -131,10 +168,9 @@
     return nameSize;
 }
 
-
-
-- (void)setMicroBlogFrame:(DDMicroBlogFrame *)microBlogFrame{
-    _microBlogFrame = microBlogFrame;
+- (void)setMicroBlog:(DDMicroBlog *)microBlog{
+    _microBlog = microBlog;
+    
     [self setSubViewContent];
     [self setSubViewFrame];
 }

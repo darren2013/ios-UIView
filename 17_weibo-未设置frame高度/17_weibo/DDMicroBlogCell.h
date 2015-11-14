@@ -8,12 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-
-@class DDMicroBlogFrame;
+@class DDMicroBlog;
 
 @interface DDMicroBlogCell : UITableViewCell
 
-@property(nonatomic,strong)DDMicroBlogFrame *microBlogFrame;
+@property(nonatomic,strong)DDMicroBlog *microBlog;
 
 +(instancetype)micronBlogCellWithTableView:(UITableView *)tableView;
 

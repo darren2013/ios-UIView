@@ -9,11 +9,10 @@
 #import "DDTableViewController.h"
 #import "DDMicroBlog.h"
 #import "DDMicroBlogCell.h"
-#import "DDMicroBlogFrame.h"
 
 @interface DDTableViewController ()
 
-@property(nonatomic,strong)NSArray *microBlogFrames;
+@property(nonatomic,strong)NSArray *microBlogs;
 
 @end
 
@@ -28,35 +27,17 @@
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
     
-    //self.tableView.rowHeight = 200;
+    self.tableView.rowHeight = 200;
 }
 
-- (NSArray *)microBlogFrames{
-    if (!_microBlogFrames) {
-        NSMutableArray *microBlogFrames = [NSMutableArray array];
-        
-        NSArray *microBlogs = [DDMicroBlog microBlogList];
-        
-        for (DDMicroBlog *microBlog in microBlogs) {
-            DDMicroBlogFrame *microBlogFrame = [[DDMicroBlogFrame alloc] init];
-            [microBlogFrames addObject:microBlogFrame];
-            microBlogFrame.microBlog = microBlog;
-        }
-        
-        _microBlogFrames = microBlogFrames;
+
+- (NSArray *)microBlogs{
+    if (!_microBlogs) {
+        _microBlogs = [DDMicroBlog microBlogList];
     }
     
-    return _microBlogFrames;
+    return _microBlogs;
 }
-
-
-//- (NSArray *)microBlogs{
-//    if (!_microBlogs) {
-//        _microBlogs = [DDMicroBlog microBlogList];
-//    }
-//    
-//    return _microBlogs;
-//}
 
 
 #pragma mark - Table view data source
@@ -65,7 +46,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 
-    return self.microBlogFrames.count;
+    return self.microBlogs.count;
 }
 
 
@@ -75,15 +56,16 @@
     DDMicroBlogCell *cell = [DDMicroBlogCell micronBlogCellWithTableView:tableView];
     
     //2.给自定义tableViewCell赋值
-    cell.microBlogFrame = self.microBlogFrames[indexPath.row];
+    cell.microBlog = self.microBlogs[indexPath.row];
+    
     return cell;
 }
 
 #pragma mark - Table View Delegate
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    DDMicroBlogFrame *micronBlogFrame = self.microBlogFrames[indexPath.row];
-    return micronBlogFrame.rowHeight;
+    
+    return 200;
 }
 
 

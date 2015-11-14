@@ -18,7 +18,6 @@
 		F503201A1BF63DFB00E695BB /* DDMicroBlog.m in Sources */ = {isa = PBXBuildFile; fileRef = F50320191BF63DFB00E695BB /* DDMicroBlog.m */; };
 		F503201D1BF6443400E695BB /* DDTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F503201C1BF6443400E695BB /* DDTableViewController.m */; };
 		F50320251BF6CCB200E695BB /* DDMicroBlogCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F50320241BF6CCB200E695BB /* DDMicroBlogCell.m */; };
-		F50320281BF73C6400E695BB /* DDMicroBlogFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = F50320271BF73C6400E695BB /* DDMicroBlogFrame.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,8 +59,6 @@
 		F503201C1BF6443400E695BB /* DDTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDTableViewController.m; sourceTree = "<group>"; };
 		F50320231BF6CCB200E695BB /* DDMicroBlogCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDMicroBlogCell.h; sourceTree = "<group>"; };
 		F50320241BF6CCB200E695BB /* DDMicroBlogCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDMicroBlogCell.m; sourceTree = "<group>"; };
-		F50320261BF73C6400E695BB /* DDMicroBlogFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDMicroBlogFrame.h; sourceTree = "<group>"; };
-		F50320271BF73C6400E695BB /* DDMicroBlogFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDMicroBlogFrame.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,8 +158,6 @@
 		F503201F1BF6BC4F00E695BB /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				F50320261BF73C6400E695BB /* DDMicroBlogFrame.h */,
-				F50320271BF73C6400E695BB /* DDMicroBlogFrame.m */,
 				F50320181BF63DFB00E695BB /* DDMicroBlog.h */,
 				F50320191BF63DFB00E695BB /* DDMicroBlog.m */,
 			);
@@ -336,7 +331,6 @@
 				F5031FE81BF63D2E00E695BB /* AppDelegate.m in Sources */,
 				F503201A1BF63DFB00E695BB /* DDMicroBlog.m in Sources */,
 				F5031FE51BF63D2E00E695BB /* main.m in Sources */,
-				F50320281BF73C6400E695BB /* DDMicroBlogFrame.m in Sources */,
 				F50320251BF6CCB200E695BB /* DDMicroBlogCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -561,7 +555,6 @@
 				F503200F1BF63D2F00E695BB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 		F50320101BF63D2F00E695BB /* Build configuration list for PBXNativeTarget "17_weiboTests" */ = {
 			isa = XCConfigurationList;
@@ -570,7 +563,6 @@
 				F50320121BF63D2F00E695BB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 		F50320131BF63D2F00E695BB /* Build configuration list for PBXNativeTarget "17_weiboUITests" */ = {
 			isa = XCConfigurationList;
@@ -579,7 +571,6 @@
 				F50320151BF63D2F00E695BB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
