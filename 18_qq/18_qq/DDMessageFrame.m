@@ -7,6 +7,7 @@
 //
 
 #import "DDMessageFrame.h"
+#import "NSString+Extend.h"
 
 @implementation DDMessageFrame
 
@@ -36,8 +37,10 @@
     
     //聊天内容
     CGFloat textY = headH;
-    CGSize textMaxSize = [self sizeText:message.text maxSize:CGSizeMake(240, MAXFLOAT) fontSize:TEXT_FONT_SIZE];
     
+    //CGSize textMaxSize = [NSString sizeText:message.text maxSize:CGSizeMake(240, MAXFLOAT) fontSize:TEXT_FONT_SIZE];
+    
+    CGSize textMaxSize = [message.text sizeOfTextMaxSize:CGSizeMake(240, MAXFLOAT) fontSize:TEXT_FONT_SIZE];
     textMaxSize.width += TEXT_PADDING*2;
     textMaxSize.height += TEXT_PADDING*2;
     
@@ -47,9 +50,9 @@
     _rowHeight = MAX(CGRectGetMaxY(_contentFrame), CGRectGetMaxY(_headFrame)) + margin;
 }
 
--(CGSize) sizeText:(NSString*)text maxSize:(CGSize)maxSize fontSize:(CGFloat)fontSize{
-    return [text boundingRectWithSize:maxSize options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:fontSize]} context:nil].size;
-}
+//-(CGSize) sizeText:(NSString*)text maxSize:(CGSize)maxSize fontSize:(CGFloat)fontSize{
+//    return [text boundingRectWithSize:maxSize options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:fontSize]} context:nil].size;
+//}
 
 + (NSMutableArray *)messageFrameList{
     NSMutableArray *messageFrames = [NSMutableArray array];

@@ -14,11 +14,13 @@
 
 @interface DDMicroBlogCell ()
 
+//cell定义的控件使用weak类型
 @property(nonatomic,weak)UIImageView *iconImageView;
 @property(nonatomic,weak)UILabel *nameLabelView;
 @property(nonatomic,weak)UIImageView *vipImageView;
 @property(nonatomic,weak)UILabel *contentLabelView;
 @property(nonatomic,weak)UIImageView *pictureImageView;
+
 @end
 
 @implementation DDMicroBlogCell
@@ -40,7 +42,7 @@
 
 //
 /**
- *  生成子控件,这里不能定义控件的frame，因为控件的大小和内容有关，在设置内容时设置
+ *  生成子控件,这里不能定义控件的frame，因为控件的大小和内容有关，在设置内容时设置；
  往自定义tableViewCell添加控件时，要加到contentView上
  *
  *  @param style           <#style description#>
@@ -110,7 +112,7 @@
         self.vipImageView.hidden = NO;
     }
     self.contentLabelView.text = micronBlog.text;
-    //如果图片不存在设置，后台会打印警告
+    //如果图片不存在，并且设置了图片，后台会打印警告
     if(micronBlog.picture)self.pictureImageView.image = [UIImage imageNamed:micronBlog.picture];
 }
 

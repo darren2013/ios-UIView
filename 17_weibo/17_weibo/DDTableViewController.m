@@ -29,6 +29,13 @@
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
     
     //self.tableView.rowHeight = 200;
+    
+    self.tableView.allowsSelection = NO;
+    self.tableView.separatorStyle = UITableViewCellSelectionStyleNone;
+}
+
+-(BOOL)prefersStatusBarHidden{
+    return YES;
 }
 
 - (NSArray *)microBlogFrames{

@@ -9,6 +9,8 @@
 #import "DDMessageCell.h"
 #import "DDMessage.h"
 #import "DDMessageFrame.h"
+#import "UIImage+Extend.h"
+
 
 
 
@@ -84,23 +86,23 @@
     [self.contentBtnView setTitle:message.text forState:UIControlStateNormal];
     
     if (message.type == MessageTypeSelf) {
-        UIImage *chatSendNorImage = [UIImage imageNamed:@"chat_send_nor"];
+        //UIImage *chatSendNorImage = [UIImage imageNamed:@"chat_send_nor"];
         
 //        chatSendNorImage = [chatSendNorImage stretchableImageWithLeftCapWidth:chatSendNorImage.size.width * 0.5 topCapHeight:chatSendNorImage.size.height * 0.5];
         
-        chatSendNorImage = [self resizeImage:chatSendNorImage];
+       // chatSendNorImage = [self resizeImage:chatSendNorImage];
         
-        [self.contentBtnView setBackgroundImage:chatSendNorImage forState:UIControlStateNormal];
-        [self.contentBtnView setBackgroundImage:[self resizeImage:[UIImage imageNamed:@"chat_send_press_pic"]] forState:UIControlStateHighlighted];
+        [self.contentBtnView setBackgroundImage:[UIImage resizeImage:@"chat_send_nor"] forState:UIControlStateNormal];
+        [self.contentBtnView setBackgroundImage:[UIImage resizeImage:@"chat_send_press_pic"] forState:UIControlStateHighlighted];
     }else{
-        [self.contentBtnView setBackgroundImage:[self resizeImage:[UIImage imageNamed:@"chat_recive_nor"]] forState:UIControlStateNormal];
-        [self.contentBtnView setBackgroundImage:[self resizeImage:[UIImage imageNamed:@"chat_recive_press_pic"]] forState:UIControlStateHighlighted];
+        [self.contentBtnView setBackgroundImage:[UIImage resizeImage:@"chat_recive_nor"] forState:UIControlStateNormal];
+        [self.contentBtnView setBackgroundImage:[UIImage resizeImage:@"chat_recive_press_pic"] forState:UIControlStateHighlighted];
     }
 }
 
--(UIImage*)resizeImage:(UIImage*)image{
-    return [image stretchableImageWithLeftCapWidth:image.size.width * 0.5 topCapHeight:image.size.height * 0.5];
-}
+//-(UIImage*)resizeImage:(UIImage*)image{
+//    return [image stretchableImageWithLeftCapWidth:image.size.width * 0.5 topCapHeight:image.size.height * 0.5];
+//}
 
 -(void)setViewFrame{
     self.timeLabelView.frame = self.messageFrame.timeFrame;

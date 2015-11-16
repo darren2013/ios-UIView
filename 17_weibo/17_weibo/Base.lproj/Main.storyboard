@@ -28,6 +28,7 @@
                             <outlet property="delegate" destination="vnT-MH-okD" id="Pha-CP-sbY"/>
                         </connections>
                     </tableView>
+                    <nil key="simulatedStatusBarMetrics"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="375" height="667"/>
                 </tableViewController>
